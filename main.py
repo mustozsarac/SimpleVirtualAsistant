@@ -7,8 +7,9 @@ import webbrowser
 import os
 import smtplib
 
-MASTER = "Mustafa"
-chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
+#setting some variables
+MASTER = "Your name"
+chrome_path = 'Your chrome.exe path'
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
@@ -34,7 +35,7 @@ def wishMe():
 
     speak("How may I help you?...")
 
-
+#this function will make jarvis to take commands
 def takeCommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -68,12 +69,14 @@ if 'wikipedia' in query.lower():
     print(results)
     speak(results)
 
+#it can also open youtube or google by saying "open google" or "open youtube".
 elif 'open youtube' in query.lower():
     webbrowser.get(chrome_path).open("youtube.com")
 
 elif 'open google' in query.lower():
     webbrowser.get(chrome_path).open("google.com")
 
+#it can also tell you the time if you ask "what time it is?"    
 elif 'time' in query.lower():
     strTime=datetime.datetime.now().strftime("%H:%M")
     speak(f"the time is {strTime}")
