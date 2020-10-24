@@ -5,7 +5,7 @@ This virtual asistant can:
 
 -Tell you good morning/afternoon/night according to time.
 
--Search something on Wikipedia, and tells you the results.
+-Search something on Wikipedia, and tell you the results.
 
 -Open Youtube or Google just by saying "open google/youtube".
 
