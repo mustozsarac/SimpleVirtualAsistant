@@ -1,4 +1,4 @@
-# SimpleVirtualAsistant
+# SimpleVirtualAssistant
 A simple virtual asistant coded in Python. I just wanted to know how it works.
 
 This virtual asistant can:
